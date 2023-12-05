@@ -1,4 +1,4 @@
-package com.example.drilltracker
+package com.semblanceoffunctionality.drilltracker
 
 import android.os.Bundle
 import android.view.Menu
@@ -11,7 +11,7 @@ import androidx.navigation.ui.setupActionBarWithNavController
 import androidx.navigation.ui.setupWithNavController
 import androidx.drawerlayout.widget.DrawerLayout
 import androidx.appcompat.app.AppCompatActivity
-import com.example.drilltracker.databinding.ActivityMainBinding
+import com.semblanceoffunctionality.drilltracker.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 

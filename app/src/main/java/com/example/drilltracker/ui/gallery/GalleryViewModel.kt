@@ -1,4 +1,4 @@
-package com.example.drilltracker.ui.gallery
+package com.semblanceoffunctionality.drilltracker.ui.gallery
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData

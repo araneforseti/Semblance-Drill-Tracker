@@ -1,4 +1,4 @@
-package com.example.drilltracker.ui.slideshow
+package com.semblanceoffunctionality.drilltracker.ui.slideshow
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.drilltracker.databinding.FragmentSlideshowBinding
+import com.semblanceoffunctionality.drilltracker.databinding.FragmentSlideshowBinding
 
 class SlideshowFragment : Fragment() {
 

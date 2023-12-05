@@ -1,4 +1,4 @@
-package com.example.drilltracker
+package com.semblanceoffunctionality.drilltracker
 
 import org.junit.Test
 

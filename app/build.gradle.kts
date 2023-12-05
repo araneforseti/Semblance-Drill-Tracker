@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.drilltracker"
-    compileSdk = 33
+    namespace = "com.semblanceoffunctionality.drilltracker"
+    compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.drilltracker"
+        applicationId = "com.semblanceoffunctionality.drilltracker"
         minSdk = 33
         targetSdk = 33
         versionCode = 1

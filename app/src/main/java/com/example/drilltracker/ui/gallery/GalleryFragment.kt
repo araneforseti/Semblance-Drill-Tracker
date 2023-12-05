@@ -1,4 +1,4 @@
-package com.example.drilltracker.ui.gallery
+package com.semblanceoffunctionality.drilltracker.ui.gallery
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
-import com.example.drilltracker.databinding.FragmentGalleryBinding
+import com.semblanceoffunctionality.drilltracker.databinding.FragmentGalleryBinding
 
 class GalleryFragment : Fragment() {
 
