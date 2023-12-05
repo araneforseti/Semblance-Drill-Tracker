@@ -1,0 +1,40 @@
+name: Build
+
+on: pull_request
+
+env:
+  API_VERSION: 33
+  JAVA_VERSION: 17
+
+# Where will they run
+jobs:
+   run-tests:
+     uses: araneforseti/Semblance-Drill-Tracker/.github/workflows/tests.yml@main
+     with:
+       api_level: 33
+       java_version: 17
+
+   build-nonprod:
+     runs-on: macos-latest
+     needs: [run-tests]
+     steps:
+       - name: Checkout
+         uses: actions/checkout@v4.1.1
+
+       - name: Set up our JDK environment
+         uses: actions/setup-java@v4.0.0
+         with:
+           distribution: 'temurin'
+           java-version: ${{ env.JAVA_VERSION }}
+
+       - name: Gradle cache
+         uses: gradle/gradle-build-action@v2
+
+       - name: build debug
+         run: ./gradlew app:assembleDebug
+
+       - name: Upload our APK
+         uses: actions/upload-artifact@v3.1.3
+         with:
+           name: apk
+           path: app/build/outputs/apk/debug/app-*.apk
